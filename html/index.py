@@ -254,7 +254,7 @@ html ="""
                     hide_progress();
                 });
             }
-            
+                
             function delete_address(index){
                 hide_app_dialog();
                 show_progress("Deleting address book entry...");
@@ -857,8 +857,10 @@ html ="""
                                 <div class="col-sm-12">
                                     <label class="col-xs-2 control-label sr-only">&nbsp;</label>
                                     <div class="col-xs-10">
-                                        <input id="checkbox_save_address" type="checkbox" /> <label for="checkbox_save_address">Save address (with payment id) to address book</label>
-                                        <label style="color:#999"><small>1. Higher mixin (ringsize) means higher transaction cost, using default mixin# (12) is recommended</small></label>
+                                        <input id="checkbox_save_address" type="checkbox" />
+										<label for="checkbox_save_address">Save address (with payment id) to address book</label>
+										</br>
+                                        <label style="color:#999"><small>1. Higher mixin (ringsize) means higher transaction cost</small></label>
                                         <label style="color:#999"><small>2. Only choose higher priority when there are many transactions in tx pool or "Normal" works just fine</small></label>
                                     </div>
                                 </div>
