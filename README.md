@@ -2,9 +2,9 @@
 
 This is a fork of the Sumokoin GUI Wallet: https://github.com/sumoprojects/SumoGUIWallet adopted to work with Dero binaries.
 
-You can download Windows binaries from https://github.com/drigler/DeroGUIWallet/releases/download/v0.0.1/DeroWallet-Win64_v0.0.1.zip, extract it somewhere on you pc and run DeroWallet.exe.
+You can download Windows binaries from https://github.com/drigler/DeroGUIWallet/releases/download/v0.0.2/DeroWallet-Win64_v0.0.2.zip, extract it somewhere on you pc and run DeroWallet.exe.
 
-Zipped release is prepacked with Dero v0.11.2 binaries. If you have any doubt, download the official release from https://github.com/deroproject/dero/releases/download/v0.11.2/dero-windows-amd64.zip and put the binary files into 'Resources/bin' sub-directory.
+Zipped release is prepacked with Dero v0.11.3 binaries. If you have any doubt, download the official release from https://github.com/deroproject/dero/releases/download/v0.11.3/dero-windows-amd64.zip and put the binary files into 'Resources/bin' sub-directory.
 
 For non Windows users, or users who want to run from source:
 
