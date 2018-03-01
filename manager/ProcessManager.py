@@ -79,7 +79,14 @@ class ProcessManager(Thread):
 
 class DerodManager(ProcessManager):
     def __init__(self, resources_path, log_level=0, block_sync_size=10):
-        proc_args = u'%s/bin/derod --log-level %d --block-sync-size %d --rpc-bind-port %d' % (resources_path, log_level, block_sync_size, RPC_DAEMON_PORT)
+        proc_args = u'%s/bin/derod --log-level %d --block-sync-size %d' % (resources_path, log_level, block_sync_size)
+        # Added @speedie priority nodes
+        proc_args += ' --add-priority-node 45.63.6.91:18090'
+        proc_args += ' --add-priority-node 108.61.220.229:18090'
+        proc_args += ' --add-priority-node 207.148.5.250:18090'
+        proc_args += ' --add-priority-node 45.77.89.64:18090'
+        proc_args += ' --add-priority-node 45.76.42.165:18090'
+        proc_args += ' --add-priority-node 45.77.242.137:18090'
         ProcessManager.__init__(self, proc_args, "derod")
         self.synced = Event()
         self.stopped = Event()
