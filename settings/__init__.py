@@ -15,7 +15,7 @@ from utils.common import getHomeDir, makeDir
 
 USER_AGENT = "Dero GUI Wallet"
 APP_NAME = "Dero Wallet"
-VERSION = [0, 0, 1]
+VERSION = [0, 0, 2]
 APP_TITLE = "%s v%d.%d.%d" % (APP_NAME, VERSION[0], VERSION[1],VERSION[2])
 
 _data_dir = makeDir(os.path.join(os.getcwd(), 'data'))
